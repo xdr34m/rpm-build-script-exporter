@@ -8,12 +8,12 @@ rpmdevtools #builds the Tree needed under home
 
 ##How to do it
 ### inital
-- build the rpmbuild Tree to home
+- build the rpmbuild Tree to home<br>
 rpmdev-setuptree
-- build the source files to a tarball
+- build the source files to a tarball<br>
 tar czf ~/rpmbuild/SOURCE/name-version.tar.gz sourcefile1 sourcefile2
-- setup and cp the spec file:
-vi speccname.spec
+- setup and cp the spec file:<br>
+vi speccname.spec<br>
 cp speccname.spec ~/rpmbuild/SPECS/
-- build the rpm
+- build the rpm<br>
 rpmbuild -ba ~/rpmbuild/SPECS/speccname.spec
