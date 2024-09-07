@@ -6,7 +6,7 @@ rpm-build
 ### nice to have:
 rpmdevtools #builds the Tree needed under home
 
-##How to do it
+## How to do it
 ### inital
 - build the rpmbuild Tree to home<br>
 rpmdev-setuptree
