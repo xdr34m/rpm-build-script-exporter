@@ -10,6 +10,8 @@ rpmdevtools #builds the Tree needed under home
 ### inital
 - build the rpmbuild Tree to home<br>
 rpmdev-setuptree
+
+### for everybuild
 - build the source files to a tarball<br>
 tar czf ~/rpmbuild/SOURCE/name-version.tar.gz sourcefile1 sourcefile2
 - setup and cp the spec file:<br>
