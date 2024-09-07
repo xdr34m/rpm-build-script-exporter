@@ -1,0 +1,16 @@
+[Unit]
+Description= Prometheus exporter to execute scripts and collect metrics from the output or the exit status.
+Documentation=https://github.com/ricoberger/script_exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=alloy
+EnvironmentFile=/etc/sysconfig/script_exporter.config
+ExecStart=/usr/bin/script_exporter $CUSTOM_ARGS
+ExecStop=/bin/kill $MAINPID
+Restart=always
+TimeoutStopSec=20s
+
+[Install]
+WantedBy=multi-user.target
